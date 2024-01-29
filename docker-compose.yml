@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  test-docker-service:
+    build: .
+    restart: always
+    ports:
+      - "8082:8081"
+    environment:
+      MYSQL_DATABASE: database
+      MYSQL_HOST: db_test
+      MYSQL_USER: hieu
+      MYSQL_PASSWORD: 1234
+      MYSQL_PORT: 3306
+

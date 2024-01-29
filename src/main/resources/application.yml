@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:33061}/database
+    username: ${MYSQL_USER:hieu}
+    password: ${MYSQL_PASSWORD:1234}
+  jpa:
+    hibernate:
+      ddl-auto: update
